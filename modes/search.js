@@ -1,5 +1,4 @@
 import { Actor } from 'apify';
-import fetch from 'node-fetch';
 
 // FUNCTION FOR SEARCHING POSTS
 export async function searchPosts(input) {

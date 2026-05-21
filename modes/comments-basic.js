@@ -1,7 +1,6 @@
 import { Actor } from 'apify';
-import fetch from 'node-fetch';
 import { parseRedditInput } from '../utils/UrlParser.js';
-Hnn
+
 // FUNCTION FOR COMMENT SCRAPING
 export async function scrapeCommentsBasic(input) {
     const { subreddit, postId } = parseRedditInput(input);

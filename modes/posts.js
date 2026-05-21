@@ -1,5 +1,4 @@
 import { Actor } from 'apify';
-import fetch from 'node-fetch';
 import { parseRedditInput } from '../utils/UrlParser.js';
 
 // FUNCTION FOR POST SCRAPING

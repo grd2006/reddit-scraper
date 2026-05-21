@@ -1,5 +1,4 @@
 import { Actor } from 'apify';
-import fetch from 'node-fetch';
 import { scrapePosts } from './modes/posts.js';
 import { searchPosts } from './modes/search.js';
 import { scrapeCommentsBasic } from './modes/comments-basic.js';
