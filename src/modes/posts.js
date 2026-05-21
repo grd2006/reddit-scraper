@@ -7,7 +7,12 @@ export async function scrapePosts(input) {
 
     const url = `https://www.reddit.com/r/${subreddit}.json`;
 
-    const response = await fetch(url);
+    const response = await fetch(url, {
+        headers: {
+            'User-Agent': 'Mozilla/5.0',
+            'Accept': 'application/json',
+        },
+    });
 
     const data = await response.json();
 
