@@ -122,7 +122,7 @@
 // }
 
 // async function fetchMoreChildren(subreddit, postId, childrenIds) {
-//     const url = `https://old.reddit.com/api/morechildren.json?api_type=json&link_id=t3_${postId}&children=${childrenIds.join(',')}&sort=confidence`;
+//     const url = `https://api.reddit.com/api/morechildren.json?api_type=json&link_id=t3_${postId}&children=${childrenIds.join(',')}&sort=confidence`;
 //     const data = await fetchRedditJson(url);
 //     return data?.json?.data?.things || [];
 // }
@@ -209,7 +209,7 @@
 //         moreBatchSize: input?.moreBatchSize ?? 20,
 //     };
 
-//     const url = `https://old.reddit.com/r/${subreddit}/comments/${postId}.json`;
+//     const url = `https://api.reddit.com/r/${subreddit}/comments/${postId}.json`;
 //     const data = await fetchRedditJson(url);
 //     const listing = Array.isArray(data) ? data[1]?.data?.children || [] : [];
 
