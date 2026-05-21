@@ -6,7 +6,7 @@ export async function searchPosts(input) {
     const query = input?.query || 'chatgpt';
 
     const url =
-        `https://www.reddit.com/search.json?q=${encodeURIComponent(query)}`;
+        `https://old.reddit.com/search.json?q=${encodeURIComponent(query)}`;
 
     const response = await fetch(url);
 

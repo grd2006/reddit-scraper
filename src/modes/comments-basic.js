@@ -5,7 +5,7 @@ import { parseRedditInput } from '../utils/UrlParser.js';
 export async function scrapeCommentsBasic(input) {
     const { subreddit, postId } = parseRedditInput(input);
 
-    const url = `https://www.reddit.com/r/${subreddit}/comments/${postId}.json`;
+    const url = `https://old.reddit.com/r/${subreddit}/comments/${postId}.json`;
 
     const response = await fetch(url);
 

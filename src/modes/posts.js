@@ -5,7 +5,7 @@ import { parseRedditInput } from '../utils/UrlParser.js';
 export async function scrapePosts(input) {
     const { subreddit } = parseRedditInput(input);
 
-    const url = `https://www.reddit.com/r/${subreddit}.json`;
+    const url = `https://old.reddit.com/r/${subreddit}.json`;
 
     const response = await fetch(url, {
         headers: {
